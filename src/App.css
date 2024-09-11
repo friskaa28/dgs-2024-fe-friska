@@ -1,0 +1,117 @@
+/* App.css */
+
+/* Gaya khusus untuk aplikasi */
+.app-container {
+  @apply p-4 max-w-screen-lg mx-auto;
+}
+
+.sidebar {
+  @apply shadow-lg bg-white p-6 rounded-md;
+}
+
+.card {
+  @apply bg-white shadow p-4 rounded-md hover:bg-gray-100;
+}
+
+/* Contoh tambahan untuk responsif */
+@media (min-width: 768px) {
+  .app-container {
+    @apply flex;
+  }
+}
+/* App.css */
+
+body {
+  @apply bg-gray-50 text-gray-800 antialiased;
+}
+
+/* Sidebar */
+aside {
+  @apply shadow-lg rounded-md p-6 bg-white;
+}
+
+/* Card Elements */
+.card {
+  @apply bg-gray-100 p-3 rounded-md flex items-center justify-between;
+}
+
+/* Icon Button */
+.icon-button {
+  @apply text-gray-500;
+}
+
+/* Profile & Notification section */
+.profile-notification {
+  @apply flex flex-col items-center space-y-4 mb-6;
+}
+
+/* Add Button */
+.add-button {
+  @apply bg-gray-200 p-2 rounded-full border-dashed border-2 border-gray-400 mt-auto;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .app-container {
+    @apply flex;
+  }
+}
+
+/* Modal overlay (latar belakang gelap) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Warna overlay setengah transparan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Container modal */
+.modal-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal body */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Modal footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Button save */
+.btn-save {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button close */
+.btn-close {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
